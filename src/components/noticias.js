@@ -4,13 +4,12 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as styles from './noticia-preview.module.css'
 import Container from './container'
 
-const LatestNoticias = ({ title, introduction }) => {
+const LatestNoticias = ({ title }) => {
   const latestNoticia = useLatestNoticia()
 
   return (
     <Container>
       <h1 className={styles.titulo}>{title}</h1>
-      {/* <h3 className={styles.titulo}>{introduction}</h3> */}
       <ul className={styles.articleList}>
         {latestNoticia &&
           latestNoticia.map((noticia) => {

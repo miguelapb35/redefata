@@ -28,10 +28,7 @@ class RootIndex extends React.Component {
           introduction="Estos son algunos de los servicios que ofrecemos"
         />
         <ArticlePreview posts={posts} />
-        <LatestNoticias
-          title="Noticias Efata"
-          introduction="Actualidades Efata"
-        />
+        <LatestNoticias title="Noticias Efata" />
         <Gallery />
       </Layout>
     )

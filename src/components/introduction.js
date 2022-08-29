@@ -62,10 +62,9 @@ const Introduction = () => {
         <div className={styles.column}>
           <div className={styles.video}>
             <Video
-              videoSrcURL={vidUrl}
-              // videoSrcURL="https://player.vimeo.com/video/727443407?h=da1eaa58fe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              //videoSrcURL={vidUrl}
+              videoSrcURL="https://player.vimeo.com/video/727443407?h=da1eaa58fe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               videoTitle="Efata Sede Silvania"
-              poster="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvenngage-wordpress-gallery.s3.amazonaws.com%2Fuploads%2F2018%2F10%2FClassic-Tweak-Halloween-Event-Poster-Example2.jpg&f=1&nofb=1"
             />
           </div>
         </div>
