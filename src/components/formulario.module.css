@@ -1,0 +1,44 @@
+input,
+button {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+input {
+  background-color: var(--verde-claro-efata);
+  color: var(--azul-efata);
+  border-color: var(--azul-efata);
+  border-width: 2px;
+  font-size: var(--text-xl);
+}
+
+input:hover {
+  background-color: var(--white);
+  color: var(--green-efata);
+  font-size: var(--text-2xl);
+  width: 82%;
+  height: 82%;
+  transition: all 0.7s ease-in-out;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--green-efata);
+  font-size: var(--text-xl);
+  /* color: var(--subtitle-text); */
+}
+
+button:hover {
+  background-color: var(--title-text);
+  color: var(--white);
+  font-size: var(--text-2xl);
+  width: 82%;
+  height: 82%;
+  transition: all 0.7s ease-in-out;
+}
+
+.enviar {
+  font-size: var(--text-xl);
+  font-weight: var(--semibold);
+}

@@ -1,0 +1,11 @@
+.videowrapper {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.iframewrapper {
+  background-color: transparent;
+  border-width: 0;
+}

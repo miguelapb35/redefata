@@ -1,0 +1,167 @@
+.navigationbar {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* max-width: var(--size-max-width); */
+  align-items: center;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--size-gutter);
+  /*   position: -webkit-sticky;
+  position: sticky; */
+
+  background-color: white;
+  height: 65px;
+  z-index: 1000;
+}
+
+.mobileNavButton {
+  display: none;
+}
+
+.redesicon {
+  width: 35px;
+  height: 35px;
+}
+
+.mobileNavButtonLines {
+  height: 5px;
+  width: 20px;
+  background: var(--green-efata);
+  color: var(--green-efata);
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: var(--space-xl);
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: var(--text-md);
+}
+
+.navigationItem a {
+  border-bottom: 1.5px solid transparent;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.navigationItem a:hover {
+  border-bottom-color: var(--primary);
+  color: var(--primary);
+}
+
+.logoLink {
+  display: flex;
+  font-weight: var(--medium);
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: var(--space-md);
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+}
+
+.logo {
+  height: var(--size-logo);
+  width: var(--size-logo);
+  display: block;
+  background-image: url('../../static/logos/logodomus.png');
+}
+
+.mobileMenuLinks {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .logoLink {
+    width: 35px;
+    height: 35px;
+  }
+  .logoLink > span:last-child {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .navigationItem {
+    margin-bottom: 10px;
+    font-size: var(--text-xs);
+  }
+  .redesicon {
+    width: 25px;
+    height: 25px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logoLink {
+    width: 25px;
+    height: 25px;
+  }
+  .logoLink > span:last-child {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .mobileNavButton {
+    display: flex;
+    width: fit-content;
+    /* margin: 0 0 0 82%; */
+    height: 23px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menuLinks {
+    display: none;
+  }
+  .mobileMenuLinks {
+    display: flex;
+    background: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 8%;
+  }
+  .navigationItem {
+    margin-bottom: 10px;
+  }
+  .redesicon {
+    width: 35px;
+    height: 35px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
