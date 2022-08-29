@@ -5,7 +5,8 @@ import * as styles from './formulario.module.css'
 const Formulario = () => (
   <div>
     <p>Quieres que te llamemos ?</p>
-    <form name="contact" netlify>
+    <form name="contact" netlify data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
       <p>
         <input type="text" name="nombre" placeholder="Nombre" />
       </p>
